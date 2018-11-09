@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "New User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h1 style="border-bottom:3px solid gray; padding-bottom:15px;">Create User</h1>
+<br />
+<form class="border needs-validation" novalidate style="padding:15px; border-top:3px solid rgb(255, 217, 110) !important;" ng-controller="newUser">
+    <div class="form-group">
+        <label class="d-none d-md-block" for="txtFullName">Full Name</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="material-icons">face</i></div>
+            </div>
+            <input type="text" class="form-control form-control-lg" id="txtFullName" aria-describedby="fullNameHelp" placeholder="Enter your full name" required>
+            <div class="invalid-feedback">
+                Please input your full name.
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="d-none d-md-block" for="txtEmail">E-mail</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="material-icons">mail_outline</i></div>
+            </div>
+            <input type="email" class="form-control form-control-lg" id="txtEmail" placeholder="Enter your e-mail address" required>
+            <div class="invalid-feedback">
+                Please input your e-mail address.
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="d-none d-md-block" for="txtUsername">Username</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="material-icons">person_outline</i></div>
+            </div>
+            <input type="text" class="form-control form-control-lg" id="txtUsername" placeholder="Enter a username" required>
+            <div class="invalid-feedback">
+                Please input a username.
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="d-none d-md-block" for="txtPassword">Password</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="material-icons">security</i></div>
+            </div>
+            <input type="password" class="form-control form-control-lg" id="txtPassword" placeholder="Enter a password" required>
+            <div class="invalid-feedback">
+                Please input a password.
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="d-none d-md-block" for="txtPasswordConfirm">Confirm your Password</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="material-icons">confirmation_number</i></div>
+            </div>
+            <input type="password" class="form-control form-control-lg" id="txtPasswordConfirm" placeholder="Password confirmation" required>
+            <div class="invalid-feedback">
+                Please input the password confirmation.
+            </div>
+        </div>
+    </div>
+    <div class="text-right" style="width:100%;">
+        <button class="btn btn-outline-primary btn-lg" onclick="CreateUser()">Create</button>
+    </div>
+</form>
+<br />

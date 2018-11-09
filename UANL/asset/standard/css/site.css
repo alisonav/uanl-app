@@ -1,0 +1,320 @@
+body {
+	background-color: #f3f3f3;
+}
+
+ul, li {
+	list-style: none;
+    list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+form {
+    padding:15px;
+    border-top:3px solid rgb(255, 217, 110) !important;
+}
+
+a.nav-link {
+	border:2px solid rgb(255, 201, 14);
+}
+
+//a.nav-link:hover {
+//	background-color:#FFF;
+//	border-left:2px solid rgb(31, 81, 216);
+//	border-right:2px solid rgb(31, 81, 216);
+//	border-top:2px solid rgb(31, 81, 216);
+//	
+//	-webkit-border-radius: 10px 10px 0 0;
+//    -moz-border-radius: 10px 10px 0 0;
+//    border-radius: 10px 10px 0 0;
+//
+//    -webkit-transition: background-color linear 0.2s;
+//    -moz-transition: background-color linear 0.2s;
+//    -o-transition: background-color linear 0.2s;
+//    -ms-transition: background-color linear 0.2s;
+//    transition: background-color linear 0.2s;
+//}
+
+a.nav-link:hover {
+	background-color:rgb(255, 217, 110);
+	box-shadow:0 0 5px 1px gray;
+	border:2px solid rgb(255, 201, 14);
+	
+	-webkit-transition: all linear 0.2s;
+	-moz-transition: all linear 0.2s;
+	-o-transition: all linear 0.2s;
+	-ms-transition: all linear 0.2s;
+	transition: all linear 0.1s;
+}
+
+button {
+	border-radius:0 !important;
+}
+
+.uanl-card {
+	width:100%;
+	border:1px solid rgb(206, 212, 218);
+	padding:10px;
+}
+
+.uanl-card.uanl-card-default {
+	border-left:5px solid rgb(206, 212, 218);
+}
+
+.uanl-card.uanl-card-tip {
+	border-left:5px solid green;
+}
+
+.uanl-card.uanl-card-tip > h3 {
+	color:green;
+}
+
+.uanl-card.uanl-card-question {
+	border-left:5px solid red;
+}
+
+.uanl-card.uanl-card-question > h3 {
+	color:red;
+}
+
+.uanl-card.uanl-card-info {
+	border-left:5px solid blue;
+}
+
+.uanl-card.uanl-card-info > h3 {
+	color:blue;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-30 { font-size: 30px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.transform-default {
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	-o-transition: all ease 0.2s;
+	-ms-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+}
+
+button.card-btn-default {
+	padding:5px;
+	background-color:transparent;
+	color: #000;
+	border:none;
+	font-size:1.3em;
+	cursor:pointer;
+}
+
+#header {
+	background-color: rgb(255, 217, 110);
+}
+
+#header.menu-hidden {
+    height:200px;
+}
+
+#header > div.menu-default {
+	padding-top:150px;
+}
+
+#header > div.menu-mobile {
+	padding-top:15px;
+}
+
+#header > div > div.ul-style {
+	background-color: rgb(255, 201, 14);
+	color: rgb(31, 81, 216);
+}
+
+#header > div > div > div > div ul {
+	padding:10px 0 10px 0;
+}
+
+#header > div > div > div > div ul > li {
+	font-size:1.5em;
+	font-weight:bold;
+	padding:0 10px 0 10px;
+}
+
+#header > div > div > div > div > div i.menu-account {
+	line-height:inherit;
+	cursor:pointer;
+}
+
+#body {
+	background-color:transparent;
+}
+
+#body > div {
+	background-color:#FFF;
+	min-height:400px;
+}
+
+#footer {
+	background-color: gray;
+	height: 200px;
+}
+
+#divLogin {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+	background-color: white;
+	max-width:30em;
+	min-width:18em;
+}
+
+#divLogin #divLoginHeader {
+	background-color: rgb(255, 217, 110);
+	color: rgb(31, 81, 216);
+}
+
+#divLogin #divLoginHeader h1 {
+	padding:30px 10px 10px 10px;
+	bottom:0;
+	font-size:3em;
+}
+
+#divLogin #divLoginBody {
+	//height: 11em;
+}
+
+#divLogin #divLoginBody .loginInputGroup {
+	width:100%;
+	padding: 10px;
+}
+
+#divLogin #divLoginFooter {
+	background-color: gray;
+}
+
+#divLogin #divLoginFooter .button-group-right {
+	padding:10px;
+}
+
+#divLogin #divLoginFooter .button-group-right button {
+	padding:5px;
+	background-color:transparent;
+	color: #FFF;
+	border:none;
+	font-size:1.5em;
+	cursor:pointer;
+}
+
+#divHidePage {
+	background-color: rgb(0, 0, 0, 0);
+	position:fixed; 
+	min-width:100%; 
+	min-height:100%; 
+	z-index:-1;
+}
+
+.show-hide-page {
+	z-index:9999 !important;
+	background-color: rgb(0, 0, 0, 0.3) !important;
+}
+
+#divLeftMenu {
+	position:fixed;
+	height:100%;
+	left:-300px; 
+	top:0; 
+	width:300px; 
+	z-index:99999; 
+	background-color:gray;
+}
+
+.show-left-menu {
+	left:0 !important;
+}
+
+#divLeftMenu .left-menu-list {
+	width:220px; 
+	float:left; 
+	height:100%;
+}
+
+#divLeftMenu .left-menu-list ul {
+	background-color:#FFF;
+}
+
+#divLeftMenu .left-menu-list ul li a {
+	border:0;
+	font-size:1.2em;
+	padding-top:18px;
+	padding-bottom:18px;
+	font-weight:bold;
+	color:#000;
+}
+
+#divLeftMenu .left-menu-list ul li a:hover {
+	color:rgb(31, 81, 216);
+}
+
+#divLeftMenu .left-menu-list h2 {
+	background-color:rgb(255, 217, 110); 
+	padding:15px; 
+	margin-top:50px; 
+	color:rgb(31, 81, 216);
+}
+
+#divLeftMenu .left-menu-block {
+	width:80px; 
+	height:100%; 
+	background-color:black; 
+	float:left;
+}
+
+#divLeftMenu .left-menu-block span {
+	color:gray; 
+	left:50%; 
+	display:block; 
+	margin-top:50px;
+	cursor:pointer;
+}
+
+#divMain.main-items {
+	//margin:0 auto;	
+}
+
+#divMain.main-items div.main-item-default {
+	min-width:300px;
+	height:300px;
+	border:3px solid transparent;
+	position:relative;
+	overflow:hidden;
+}
+
+#divMain.main-items div.main-item-default > img {
+	position:absolute; 
+	left:50%; 
+	top:50%; 
+	transform:translate(-50%, -50%);
+	opacity:0.6; 
+	width:100%;
+}
+
+#divMain.main-items div.main-item-default > img:hover {
+	width:110%;
+}
+
+#divMain.main-items div.main-item-default > div {
+	position:absolute; 
+	margin:0; 
+	top:50%; 
+	left:50%; 
+	transform:translate(-50%, -50%);
+}
+
+#divMain.main-items div.main-item-default > div span {
+	width:100%; 
+	display:block;
+}

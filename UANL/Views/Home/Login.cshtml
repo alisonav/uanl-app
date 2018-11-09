@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    @Styles.Render("~/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div id="divLogin">
+        <div id="divLoginHeader">
+            <h1>LOGIN</h1>
+        </div>
+        <div id="divLoginBody">
+            <br />
+            <div class="loginInputGroup">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="icon-username"><i class="material-icons">face</i></span>
+                    </div>
+                    <input id="txtUser" type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" aria-describedby="icon-username">
+                </div>
+                <div class="input-group input-group-lg" style="padding-top:20px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="icon-password"><i class="material-icons">vpn_key</i></span>
+                    </div>
+                    <input id="txtPass" type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="icon-password">
+                </div>
+            </div>
+            <br />
+        </div>
+        <div id="divLoginFooter">
+            <div class="button-group-right text-right">
+                <button id="btnCreateAccount">Crear Cuenta</button>
+                <span style="color:#FFF; font-size:1.5em;">|</span>
+                <button id="btnLogin">Login</button>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/jquery")
+    @Scripts.Render("~/bootstrap")
+    @Scripts.Render("~/angular")
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.6/dist/sweetalert2.all.min.js"></script>
+
+    <script src="~/asset/standard/js/login/login.js"></script>
+</body>
+</html>

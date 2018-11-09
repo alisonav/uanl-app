@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div id="divHidePage" class="transform-default"></div>
+
+    <div id="divLeftMenu" class="transform-default">
+        <div class="left-menu-list">
+            <h2>Menu</h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Item 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Item 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Item 3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="left-menu-block">
+            <span class="text-center" onclick="CloseLeftMenu()"><i class="material-icons md-48">close</i></span>
+        </div>
+    </div>
+    <div>
+        <div id="header" ng-class="{ 'menu-hidden': !isAuthenticated }">
+            <div class="d-block d-md-none container text-left menu-mobile" ng-show="isAuthenticated">
+                <i class="material-icons md-48" style="color:rgb(31, 81, 216); cursor:pointer;" onclick="OpenLeftMenu()">menu</i>
+            </div>
+            <div class="d-none d-md-block menu-default" ng-show="isAuthenticated">
+                <div class="ul-style">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="nav col-md-10">
+                                <li class="nav-item"><a class="nav-link" href="#!item1">Item 1</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!item2">Item 2</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!item3">Item 3</a></li>
+                            </ul>
+                            <div class="col-md-2 text-right"><i class="material-icons md-48 menu-account">face</i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div class="container">
+                @RenderBody()
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    @Scripts.Render("~/jquery")
+    @Scripts.Render("~/bootstrap")
+    @Scripts.Render("~/angular")
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.6/dist/sweetalert2.all.min.js"></script>
+
+    @Scripts.Render("~/app")
+    @Scripts.Render("~/appServices")
+    @Scripts.Render("~/appControllers")
+
+    <script src="~/asset/standard/js/main/main.js"></script>
+    <script src="~/asset/standard/js/main/user.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
